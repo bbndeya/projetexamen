@@ -1,0 +1,105 @@
+header{
+    display: flex;
+    justify-content: space-between; /* ESPACE ENTRE LES ELEMENTS*/
+    align-items: center; /*CENTRE VERTICALEMENT*/
+    padding: 15px 60px; /* ESPACE INTERIEUR: HAUT ET BAS 15px ET GAUCHE ET DROITE 60px*/
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /*PETITE OPMBRE ELEGANTE*/
+    position: sticky; /*RESTE EN HAUT QUAND JE SROLL*/
+    top: 0; /*COLLER EN HAUT*/
+    z-index: 1000 ;/*PASSE AU DESSUS DES AUTRES ELEMENTS*/
+    background-color: #74868f;
+     background:white; /*FAIRE UN TEINTE*/
+ }
+
+ .logo img{
+    height: 120px;
+    width: auto; /*ESPACE NETRE LES LIENS*/
+ }
+    
+             /*MENU*/
+
+.navbar ul {
+    display: flex; /*MET LES LIENS SUR UNE LIGNE*/
+    list-style: none; /*SUPPRIME LES POINTS*/
+    gap: 30px; /*ESPAC E ENTRE LES LIENS*/
+    align-items: center; /*CENTRE VERTICALEMENT LE BOUTON*/
+}
+
+.navbar ul li a {
+    text-decoration: none; /*ENLEVE LE SOULIGNEMENT*/
+
+    font-weight: 500; /*LEGEREMENT GRAND*/
+    transition: color 0.3 ease; /*ANIMATION DOUCE*/
+}
+
+.navbar ul li a:hover{
+    color: white; /*DEVIENT BLEU AU SURVOL*/
+}
+.btn-nav{
+    background-color: #1e4db7 ;
+    color:white;
+    padding:8px 15px;
+    border-radius:5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f9fc;
+}
+
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 40px;
+    color: #0a3d62;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service-box {
+    background: #ffffff;
+    width: 260px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.service-box i {
+    color: #1e90ff;
+    margin-bottom: 15px;
+}
+
+.service-box h3 {
+    margin-bottom: 10px;
+    color: #0a3d62;
+}
+
+.service-box p {
+    color: #666;
+    font-size: 14px;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);  /**/
+}
