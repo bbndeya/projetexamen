@@ -20,6 +20,7 @@ header{
 
 .navbar ul {
     display: flex; /*MET LES LIENS SUR UNE LIGNE*/
+    justify-content: center;
     list-style: none; /*SUPPRIME LES POINTS*/
     gap: 30px; /*ESPAC E ENTRE LES LIENS*/
     align-items: center; /*CENTRE VERTICALEMENT LE BOUTON*/
@@ -33,7 +34,7 @@ header{
 }
 
 .navbar ul li a:hover{
-    color: white; /*DEVIENT BLEU AU SURVOL*/
+    color: #1e4db7; /*DEVIENT BLEU AU SURVOL*/
 }
 .btn-nav{
     background-color: #1e4db7 ;
@@ -41,65 +42,70 @@ header{
     padding:8px 15px;
     border-radius:5px;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+.btn-nav:hover{
+       background-color: white;
+    }
+/* SECTION RENDEZ-VOUS */
+.rdv {
+    padding: 80px 20px;
+    background: #f4f9ff;
 }
 
-body {
-    background-color: #f4f9fc;
-}
-
-.services {
-    padding: 60px 20px;
+.rdv h2 {
     text-align: center;
-}
-
-.services h1 {
-    font-size: 40px;
-    color: #0a3d62;
+    font-size: 32px;
+    color: #0d6efd;
     margin-bottom: 10px;
 }
 
-.subtitle {
-    color: #555;
+.rdv .subtitle {
+    text-align: center;
     margin-bottom: 40px;
+    color: #555;
 }
 
-.services-container {
+.rdv-content {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.rdv-form .form-group {
+    margin-bottom: 20px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-direction: column;
 }
 
-.service-box {
-    background: #ffffff;
-    width: 260px;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
+.rdv-form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
 }
 
-.service-box i {
-    color: #1e90ff;
-    margin-bottom: 15px;
-}
-
-.service-box h3 {
-    margin-bottom: 10px;
-    color: #0a3d62;
-}
-
-.service-box p {
-    color: #666;
+.rdv-form input,
+.rdv-form select,
+.rdv-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     font-size: 14px;
 }
 
-.service-box:hover {
-    transform: translateY(-10px);  /**/
+.rdv-form button {
+    width: 100%;
+    padding: 14px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rdv-form button:hover {
+    background: #084298;
 }

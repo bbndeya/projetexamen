@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Rendez-Vous.css" />
+    <title>RENDEZ-VOUS</title>
+  </head>
+  <body>
+    <!-- PARTIE RENDEZ-VOUS-->
+    <header>
+    <div class="logo"><img src="medconnect-removebg-preview.png" alt="" width="120px" height="120px"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="Medconnect.html">Accueil</a></li>
+            <li><a href="Service.html">Services</a></li>
+            <li><a href="Apropos.html">À Propos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="RendezVous.html" class="btn-nav">Prendre RDV</a></li>
+        </ul>
+    </nav>
+</header>
+<!--SECTION PARTIE-->
+<section class="rdv" id="rdv">
+    <div class="container">
+        <h2>Prendre Rendez-Vous</h2>
+        <p class="subtitle">Réservez votre consultation en quelques secondes.</p>
+
+        <div class="rdv-content">
+
+            <form class="rdv-form">
+                <div class="form-group">
+                    <label>Nom complet</label>
+                    <input type="text" placeholder="Votre nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Votre email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Téléphone</label>
+                    <input type="tel" placeholder="+221..." required>
+                </div>
+
+                <div class="form-group">
+                    <label>Choisir un service</label>
+                    <select required>
+                        <option value="">-- Sélectionner --</option>
+                        <option>Consultation Générale</option>
+                        <option>Pédiatrie</option>
+                        <option>Cardiologie</option>
+                        <option>Analyse Médicale</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Heure</label>
+                    <input type="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Message (optionnel)</label>
+                    <textarea rows="4" placeholder="Décrivez votre problème..."></textarea>
+                </div>
+
+                <button type="submit">Confirmer le Rendez-Vous</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+  </body>
+</html>
