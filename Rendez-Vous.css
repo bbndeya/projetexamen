@@ -1,0 +1,111 @@
+header{
+    display: flex;
+    justify-content: space-between; /* ESPACE ENTRE LES ELEMENTS*/
+    align-items: center; /*CENTRE VERTICALEMENT*/
+    padding: 15px 60px; /* ESPACE INTERIEUR: HAUT ET BAS 15px ET GAUCHE ET DROITE 60px*/
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /*PETITE OPMBRE ELEGANTE*/
+    position: sticky; /*RESTE EN HAUT QUAND JE SROLL*/
+    top: 0; /*COLLER EN HAUT*/
+    z-index: 1000 ;/*PASSE AU DESSUS DES AUTRES ELEMENTS*/
+    background-color: #74868f;
+     background:white; /*FAIRE UN TEINTE*/
+ }
+
+ .logo img{
+    height: 120px;
+    width: auto; /*ESPACE NETRE LES LIENS*/
+ }
+    
+             /*MENU*/
+
+.navbar ul {
+    display: flex; /*MET LES LIENS SUR UNE LIGNE*/
+    justify-content: center;
+    list-style: none; /*SUPPRIME LES POINTS*/
+    gap: 30px; /*ESPAC E ENTRE LES LIENS*/
+    align-items: center; /*CENTRE VERTICALEMENT LE BOUTON*/
+}
+
+.navbar ul li a {
+    text-decoration: none; /*ENLEVE LE SOULIGNEMENT*/
+
+    font-weight: 500; /*LEGEREMENT GRAND*/
+    transition: color 0.3 ease; /*ANIMATION DOUCE*/
+}
+
+.navbar ul li a:hover{
+    color: #1e4db7; /*DEVIENT BLEU AU SURVOL*/
+}
+.btn-nav{
+    background-color: #1e4db7 ;
+    color:white;
+    padding:8px 15px;
+    border-radius:5px;
+}
+.btn-nav:hover{
+       background-color: white;
+    }
+/* SECTION RENDEZ-VOUS */
+.rdv {
+    padding: 80px 20px;
+    background: #f4f9ff;
+}
+
+.rdv h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.rdv .subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.rdv-content {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.rdv-form .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rdv-form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.rdv-form input,
+.rdv-form select,
+.rdv-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.rdv-form button {
+    width: 100%;
+    padding: 14px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rdv-form button:hover {
+    background: #084298;
+}
